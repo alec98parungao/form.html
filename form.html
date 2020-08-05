@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pig quiz</title>
+    <link href="form.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <h1><img src="thirdarticle/pig2.png" alt="A pig">Pig</h1>
+    <form id="rendered-form" action="https://formspree.io/lexparungao@yahoo.com" method="POST">
+      <fieldset>
+        <legend><strong>Your information</strong></legend>
+        <div class="asection">
+          <p><label id="firstname">First name:<span>*</span></label></p>
+          <p><input type="text" name="firstname" maxlength="25" required="required" aria-required="true"></p>
+        </div>
+
+        <div class="asection">
+          <p><label id="lastname">Last name:&nbsp;&nbsp;</label></p>
+          <p><input type="text" name="lastname" maxlength="15"></p>
+        </div>
+
+        <div class="asection">
+          <p><label id="youremail">E-mail:<span>*</span></label></p>
+          <p><input type="email" name="youremail" maxlength="25" required="required" aria-required="true"></p>
+        </div>
+
+        <div class="required">
+          <p>
+            <span>*</span>required
+          </p>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend><strong>🐷Time to quiz!🐷</strong></legend>
+        <div class="asection">
+          <p><label id="pigisa">1. Pig is a(n)</label></p>
+          <p>
+            <input type="radio" name="pigisa" value="herbivore">herbivore.<br>
+            <input type="radio" name="pigisa" value="carnivore">carnivore.<br>
+            <input type="radio" name="pigisa" value="omnivore">omnivore.
+          </p>
+        </div>
+      
+        <div class="asection">
+          <p><label id="pigproduces[]">2. Pig produces</label></p>
+          <p>
+            <input type="checkbox" name="pigproduces[]" value="meat">meat.<br>
+            <input type="checkbox" name="pigproduces[]" value="leather">leather.
+          </p>
+        </div>
+
+        <div class="asection">
+          <p><label id="pigsliveexcept">3. Pigs live everywhere except</label></p>
+          <p>
+            <select name="pigsliveexcept">
+              <option value="where">where?</option>
+              <option value="africa">Africa.</option>
+              <option value="antarctica">Antarctica.</option>
+              <option value="oceania">Oceania.</option>
+            </select>
+          </p>
+        </div>
+
+        <div class="asection">
+          <p><label id="saysomething">4. Say something about a pig.</label></p>
+          <p>
+            <textarea name="saysomething"></textarea>
+          </p>
+        </div>
+      </fieldset>
+
+      <input type="submit">
+      <input type="reset">
+      <input type="hidden" name="_next" value="https://formspree.io/mbjzwwyn" />
+  </form>
+
+  <footer>
+    <a href="table.html">To table</a><br>
+    <a href="thirdarticle/article.html">To article</a>
+  </footer>
+
+  </body>
+</html>
